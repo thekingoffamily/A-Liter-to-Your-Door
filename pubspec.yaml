@@ -1,0 +1,38 @@
+name: litr_do_doma
+description: "Литр До Дома: Симулятор Очереди — пиксельная городская аркада про топливный кризис."
+publish_to: "none"
+
+# Версия приложения для RuStore: versionName+versionCode
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Хранение рекорда, денег и настроек.
+  shared_preferences: ">=2.2.0 <3.0.0"
+  # Короткие 8-bit эффекты; сэмплы генерируются tool/gen_sounds.dart.
+  audioplayers: ">=6.0.0 <7.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # Генерация иконки приложения из assets/icon/app_icon.png.
+  flutter_launcher_icons: ">=0.14.0 <0.15.0"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - logo-app.png
+    - assets/audio/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#1a1033"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
